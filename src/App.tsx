@@ -1,12 +1,7 @@
-import './App.scss'
+import React from 'react';
+import './App.scss';
 
 function App() {
-
-  return (
-    <main className="App">
-      
-    </main>
-  )
+  return <main className="App" />;
 }
-
-export default App
+export default App;
