@@ -1,4 +1,5 @@
-@import url('../../tokens/index.scss');
+@import '../../tokens/index.scss';
+
 .header-container {
   padding-top: 80px;
   display: flex;
@@ -6,66 +7,126 @@
   justify-content: center;
   flex-direction: column;
   gap: 115px;
+  overflow-x: hidden;
+
+  @media (max-width: 768px) {
+    gap: 20px;
+    height: 550px;
+  }
   .header-top {
     align-self: flex-start;
-    padding-left: 165px;
+    padding-left: 175px;
+    top: -200px;
+    width: 314px;
+    height: 356px;
   }
   .header-bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100vw;
-  }
-  .middle-container {
-    position: relative;
-    width: 730px;
-    height: 318px;
-    .Squiggle {
-      position: absolute;
-      top: -70px;
-      left: 95px;
-      z-index: 1;
-      width: 544.31px;
-      height: 377.98px;
+
+    .left-img {
+      @media (max-width: 768px) {
+        position: relative;
+      }
+      .imgLeft {
+        @media (max-width: 768px) {
+          position: absolute;
+          left: -170px;
+          top: -200px;
+          width: 314px;
+          height: 356px;
+        }
+      }
     }
-    .middle-container-wrapper {
-      z-index: 2;
-      margin: 0 95px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 24px;
-      flex-direction: column;
-      .middle-container-title {
-        font-family: 'Manrope';
-        font-style: normal;
-        font-weight: 800;
-        font-size: 48px;
-        line-height: 56px;
-        text-align: center;
-        color: $white;
-        strong {
+    .right-img {
+      @media (max-width: 768px) {
+        position: relative;
+      }
+      .imgRight {
+        @media (max-width: 768px) {
+          position: absolute;
+          right: -170px;
+          top: -200px;
+          width: 314px;
+          height: 356px;
+        }
+      }
+    }
+    .middle-container {
+      position: relative;
+      width: 730px;
+      height: 318px;
+      .Squiggle {
+        position: absolute;
+        top: -70px;
+        left: 95px;
+        z-index: 1;
+        width: 544.31px;
+        height: 377.98px;
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+      .middle-container-wrapper {
+        z-index: 2;
+        margin: 0 95px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        flex-direction: column;
+        .middle-container-title {
           font-family: 'Manrope';
           font-style: normal;
           font-weight: 800;
           font-size: 48px;
           line-height: 56px;
           text-align: center;
-          color: $light-blue;
+          color: $white;
+          @media (max-width: 768px) {
+            font-size: 32px;
+            line-height: 40px;
+            text-align: center;
+            max-width: 457px;
+          }
+          strong {
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 56px;
+            text-align: center;
+            color: $light-blue;
+
+            @media (max-width: 768px) {
+              font-size: 32px;
+              line-height: 40px;
+              text-align: center;
+            }
+          }
         }
-      }
-      .middle-container-subtitle {
-        font-family: 'Manrope';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 25px;
-        text-align: center;
-        color: $gray;
-        max-width: 540px;
-      }
-      .middle-container-img{
-        margin-top: 40px;
+        .middle-container-subtitle {
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 25px;
+          text-align: center;
+          color: $gray;
+          max-width: 540px;
+          @media (max-width: 768px) {
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            max-width: 457px;
+          }
+        }
+
+        .middle-container-img {
+          margin-top: 40px;
+        }
       }
     }
   }
