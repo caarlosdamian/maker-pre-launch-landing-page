@@ -13,22 +13,47 @@
     gap: 20px;
     height: 550px;
   }
+
+  @media (max-width: 415px) {
+    height: 850px;
+    padding-top: 40px;
+  }
+
   .header-top {
     align-self: flex-start;
     padding-left: 175px;
-    top: -200px;
-    width: 314px;
-    height: 356px;
+
+    @media (max-width: 415px) {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      justify-self: flex-end;
+      padding-left: 0;
+    }
   }
+
   .header-bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100vw;
+    @media (max-width: 415px) {
+      display: grid;
+      grid-template-columns: repeat(2, 230px);
+      grid-template-rows: repeat(2, 1fr);
+      max-width: 415px;
+    }
 
     .left-img {
       @media (max-width: 768px) {
         position: relative;
+      }
+      @media (max-width: 415px) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row: 1/2;
       }
       .imgLeft {
         @media (max-width: 768px) {
@@ -38,11 +63,23 @@
           width: 314px;
           height: 356px;
         }
+        @media (max-width: 415px) {
+          position: inherit;
+          top: 0;
+          left: 0;
+          width: 204px;
+          height: 231px;
+        }
       }
     }
     .right-img {
       @media (max-width: 768px) {
         position: relative;
+      }
+      @media (max-width: 415px) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row: 1/2;
       }
       .imgRight {
         @media (max-width: 768px) {
@@ -52,12 +89,24 @@
           width: 314px;
           height: 356px;
         }
+
+        @media (max-width: 415px) {
+          position: inherit;
+          top: 0;
+          right: 0;
+          width: 204px;
+          height: 231px;
+        }
       }
     }
     .middle-container {
       position: relative;
       width: 730px;
       height: 318px;
+      @media (max-width: 415px) {
+        grid-row: 2/3;
+        grid-column: 1/-2;
+      }
       .Squiggle {
         position: absolute;
         top: -70px;
@@ -77,6 +126,10 @@
         justify-content: center;
         gap: 24px;
         flex-direction: column;
+        @media (max-width: 415px) {
+          margin: 0;
+          max-width: 415px;
+        }
         .middle-container-title {
           font-family: 'Manrope';
           font-style: normal;
@@ -90,6 +143,9 @@
             line-height: 40px;
             text-align: center;
             max-width: 457px;
+          }
+          @media (max-width: 415px) {
+            max-width: 327px;
           }
           strong {
             font-family: 'Manrope';
@@ -121,6 +177,9 @@
             line-height: 25px;
             text-align: center;
             max-width: 457px;
+          }
+          @media (max-width: 415px) {
+            max-width: 327px;
           }
         }
 
