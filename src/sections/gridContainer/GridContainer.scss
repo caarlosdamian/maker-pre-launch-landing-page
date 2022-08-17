@@ -1,0 +1,23 @@
+@import '../../tokens/index.scss';
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  height: 100vh;
+  background: $dark-black;
+  padding: 200px 165px 140px;
+  @media (max-width: 768px) {
+    padding: 100px 90px 140px;
+    grid-template-columns: repeat(1, 551px);
+    gap: 60px;
+    height: 100%;
+  }
+  @media (max-width: 414px) {
+    padding: 144px 24px;
+    grid-template-columns: repeat(1, 340px);
+    gap: 70px;
+    height: 1300px;
+  }
+}

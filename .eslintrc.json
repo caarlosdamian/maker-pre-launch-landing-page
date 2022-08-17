@@ -70,8 +70,9 @@
                 "ignoreRegExpLiterals": true
             }
         ],
+        "import/no-unresolved": "off",
         "import/extensions": [
-            "error",
+            "off",
             "ignorePackages",
             {
                 "js": "never",

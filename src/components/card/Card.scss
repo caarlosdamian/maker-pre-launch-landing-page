@@ -1,0 +1,108 @@
+/* eslint-disable */
+@import '../../tokens/index.scss';
+
+.card-container {
+  height: 383px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 48px;
+  &:nth-child(even) {
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    height: 123px;
+    &:nth-child(even) {
+      justify-content: flex-end;
+      margin: 0;
+    }
+  }
+  @media (max-width: 414px) {
+    flex-direction: column;
+    align-items: center;
+    height: 245px;
+    &:nth-child(even) {
+      justify-content: inherit;
+      margin: 0;
+    }
+  }
+  .img-container {
+    width: 160px;
+    height: 164px;
+    background: $dark-blue;
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 768px) {
+      width: 120px;
+      height: 124px;
+    }
+    @media (max-width: 768px) {
+      #passions {
+        width: 66px;
+        height: 80px;
+      }
+      #freedom {
+        width: 56px;
+        height: 67px;
+      }
+      #lifestyle {
+        width: 60px;
+        height: 71px;
+      }
+      #anywhere {
+        width: 78px;
+        height: 56px;
+      }
+    }
+  }
+  .description-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 24px;
+    @media (max-width: 414px) {
+      gap: 11px;
+      align-items: center;
+      justify-content: center;
+    }
+    .card-title {
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 25px;
+      color: $white;
+      text-align: left;
+      align-self: flex-start;
+      max-width: 255px;
+      @media (max-width: 768px) {
+        max-width: 340px;
+      }
+      @media (max-width: 414px) {
+        text-align: center;
+        align-self: center;
+      }
+    }
+    .card-description {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 25px;
+      color: $gray;
+      text-align: left;
+      max-width: 255px;
+      @media (max-width: 768px) {
+        max-width: 340px;
+      }
+      @media (max-width: 414px) {
+        text-align: center;
+      }
+    }
+  }
+}
