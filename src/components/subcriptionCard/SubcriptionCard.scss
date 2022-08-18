@@ -1,0 +1,14 @@
+@import '../../tokens/index.scss';
+
+.subcription-card {
+  border-radius: 8px;
+  height: 425px;
+  &.primary {
+    background: $dark-blue;
+    color: $white;
+  }
+  &.secondary {
+    background: $light-blue;
+    color: $dark-black;
+  }
+}

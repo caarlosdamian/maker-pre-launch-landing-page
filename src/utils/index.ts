@@ -2,6 +2,8 @@ import img1 from '../assets/illustration-passions.svg';
 import img2 from '../assets/illustration-financial-freedom.svg';
 import img3 from '../assets/illustration-lifestyle.svg';
 import img4 from '../assets/illustration-work-anywhere.svg';
+import img5 from '../assets/icon-free.svg';
+import img6 from '../assets/icon-paid.svg';
 
 export const infoCards = [
   {
@@ -31,5 +33,56 @@ export const infoCards = [
     img: img4,
     description:
       'Selling online means not being pinned down. Want to work AND travel? Go for it!',
+  },
+];
+
+export const subcriptionItems = [
+  {
+    id: 'card1',
+    color: 'primary',
+    title: 'Dip your toe',
+    img: img5,
+    subtitle:
+      'Just getting started? No problem at all! Our free plan will take you a long way.',
+    price: 'Free',
+    monthly: false,
+    features: [
+      {
+        name: 'Unlimited products',
+      },
+      {
+        name: 'Basic analytics',
+      },
+      {
+        name: 'Limited marketplace exposure',
+      },
+      {
+        name: '10% fee per transaction',
+      },
+    ],
+  },
+  {
+    id: 'card2',
+    color: 'secondary',
+    title: 'Dive right in',
+    img: img6,
+    subtitle:
+      'Ready for the big time? Our paid plan will help you take your business to the next level.',
+    price: '$25.00',
+    monthly: true,
+    features: [
+      {
+        name: 'Custom domain',
+      },
+      {
+        name: 'Advanced analytics and reports',
+      },
+      {
+        name: 'High marketplace visibility',
+      },
+      {
+        name: '5% fee per transaction',
+      },
+    ],
   },
 ];
