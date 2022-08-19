@@ -10,5 +10,6 @@ export interface SubcriptionItem {
   subtitle: string;
   price: string;
   monthly: boolean;
+  check: string;
   features: Feature[];
 }

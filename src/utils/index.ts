@@ -46,6 +46,7 @@ export const subcriptionItems = [
       'Just getting started? No problem at all! Our free plan will take you a long way.',
     price: 'Free',
     monthly: false,
+    check: '#3EE9E5',
     features: [
       {
         name: 'Unlimited products',
@@ -70,6 +71,7 @@ export const subcriptionItems = [
       'Ready for the big time? Our paid plan will help you take your business to the next level.',
     price: '$25.00',
     monthly: true,
+    check: '#093F68',
     features: [
       {
         name: 'Custom domain',
