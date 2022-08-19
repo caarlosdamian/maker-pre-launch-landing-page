@@ -9,25 +9,37 @@
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  @media (max-width: 768px) {
+    padding: 38px;
+    margin-top: 0;
+  }
+
+  @media (max-width: 415px) {
+    height: 459px;
+    padding: 30px;
+  }
   gap: 20px;
   position: relative;
   cursor: pointer;
-  &:hover{
+  &:hover {
     transform: scale(1.05);
-    transition: all .20s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
   &.primary {
     background: $dark-blue;
     color: $white;
+    @media (max-width: 768px) {
+      margin-top: 80px;
+    }
   }
   &.secondary {
     background: $light-blue;
     color: $dark-black;
   }
 
-  .img-absolute{
+  .img-absolute {
     position: absolute;
-    top:-30px;
+    top: -30px;
     left: 37px;
   }
 

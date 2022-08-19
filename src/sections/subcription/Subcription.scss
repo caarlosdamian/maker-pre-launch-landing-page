@@ -5,6 +5,16 @@
   background-color: $dark-black;
   padding: 100px 260px 151px;
 
+  @media (max-width: 768px) {
+    padding: 120px 160px 120px;
+    height: 1500px;
+  }
+
+  @media (max-width: 415px) {
+    padding: 28px 24px 28px;
+    height: 1300px;
+  }
+
   .subcription__top-container {
     display: flex;
     align-items: center;
@@ -32,5 +42,11 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 60px;
+    }
+
   }
 }
