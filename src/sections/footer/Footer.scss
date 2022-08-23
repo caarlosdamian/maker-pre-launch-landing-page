@@ -1,0 +1,106 @@
+@import '../../tokens/index.scss';
+
+.footer__container {
+  width: 100vw;
+  height: 400px;
+  background-color: $dark-black;
+  position: relative;
+  padding: 160px 350px;
+
+  @media (max-width: 768px) {
+    padding: 120px 147px;
+  }
+
+  @media (max-width: 415px) {
+    padding: 124px 24px;
+    height: 500px;
+  }
+  .footer__img {
+    position: absolute;
+    left: 0;
+    top: 100px;
+
+    @media (max-width: 768px) {
+      max-width: 768px;
+    }
+
+    @media (max-width: 415px) {
+      display: none;
+    }
+  }
+
+  .footer__contaner--input {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 42px;
+
+    .footer__text {
+      font-weight: 800;
+      font-size: 32px;
+      line-height: 44px;
+      text-align: center;
+      color: $white;
+      z-index: 1;
+      @media (max-width: 415px) {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+        max-width: 226px;
+        color: $white;
+      }
+    }
+    .input__container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      @media (max-width: 415px) {
+        flex-direction: column;
+      }
+
+      .input__container--iner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4px;
+        .error__label {
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 25px;
+          color: $red;
+        }
+      }
+      .footer__button {
+        min-width: 140px;
+        padding: 12px;
+        font-weight: 800;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: $dark-blue;
+        background: $light-blue;
+        border-radius: 24px;
+        border: none;
+        cursor: pointer;
+        border: 1px solid transparent;
+        &.error {
+          align-self: flex-start;
+        }
+        &:hover {
+          background: transparent;
+          color: $white;
+          border: 1px solid $light-blue;
+        }
+        @media (max-width: 415px) {
+          min-width: 328px;
+        }
+      }
+    }
+  }
+}

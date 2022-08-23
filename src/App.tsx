@@ -1,9 +1,9 @@
 /* eslint-disable */
-import React from 'react';
 import { Header } from './sections/header/Header';
 import './App.scss';
 import { GridContainer } from './sections/gridContainer/GridContainer';
 import { Subcription } from './sections/subcription/Subcription';
+import { Footer } from './sections/footer/Footer';
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <Header />
       <GridContainer />
       <Subcription />
+      <Footer />
     </main>
   );
 }
